@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Anokhiii</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Page 1: Landing -->
+    <section id="landing" class="page active">
+        <div class="background">
+            <div class="balloon"></div>
+            <div class="balloon"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+            <div class="confetti"></div>
+        </div>
+        <div class="content">
+            <h1>Happy Birthday Anokhiii 🎉</h1>
+            <p>Someone made this just for you...</p>
+            <button id="acceptGift">Accept Your Gift 🎁</button>
+            <div id="options" class="hidden">
+                <button id="yes">Yes</button>
+                <button id="no">No</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Page 2: Gift Boxes -->
+    <section id="gifts" class="page">
+        <h2>Choose Your Gift</h2>
+        <div class="gift-boxes">
+            <div class="box" data-box="1">
+                <div class="box-front">🎁</div>
+                <div class="box-back">Photos</div>
+            </div>
+            <div class="box" data-box="2">
+                <div class="box-front">🎁</div>
+                <div class="box-back">Letter</div>
+            </div>
+            <div class="box" data-box="3">
+                <div class="box-front">🎁</div>
+                <div class="box-back">Memories</div>
+            </div>
+            <div class="box" data-box="4">
+                <div class="box-front">🎁</div>
+                <div class="box-back">Surprise</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Box 1: Photo Collage -->
+    <section id="photos" class="page">
+        <h2>Memorable Moments</h2>
+        <div class="collage">
+            <div class="polaroid"><img src="photo1.jpg" alt="Photo 1"><div class="heart">❤️</div></div>
+            <div class="polaroid"><img src="photo2.jpg" alt="Photo 2"><div class="heart">❤️</div></div>
+            <div class="polaroid"><img src="photo3.jpg" alt="Photo 3"><div class="heart">❤️</div></div>
+            <div class="polaroid"><img src="photo4.jpg" alt="Photo 4"><div class="heart">❤️</div></div>
+            <div class="polaroid"><img src="photo5.jpg" alt="Photo 5"><div class="heart">❤️</div></div>
+            <div class="polaroid"><img src="photo6.jpg" alt="Photo 6"><div class="heart">❤️</div></div>
+        </div>
+        <button class="back">Back to Gifts</button>
+    </section>
+
+    <!-- Box 2: Letter -->
+    <section id="letter" class="page">
+        <h2>A Special Letter</h2>
+        <div class="letter-content">
+            <p class="reveal">Dear Anokhiii,</p>
+            <p class="reveal">Happy Birthday! Wishing you all the joy and happiness you deserve.</p>
+            <p class="reveal">May your day be filled with love and laughter.</p>
+            <p class="reveal">With all my love,</p>
+            <p class="reveal">Someone Special</p>
+        </div>
+        <button class="back">Back to Gifts</button>
+    </section>
+
+    <!-- Box 3: Slider -->
+    <section id="slider" class="page">
+        <h2>Memories Slider</h2>
+        <div class="slide-container">
+            <div class="slide active" data-slide="1">
+                <h3>Memory 1</h3>
+                <p>Text for memory 1.</p>
+                <button class="next">Next</button>
+            </div>
+            <div class="slide" data-slide="2">
+                <h3>Memory 2</h3>
+                <p>Text for memory 2.</p>
+                <button class="next">Next</button>
+            </div>
+            <!-- Add more slides up to 7 -->
+            <div class="slide" data-slide="7">
+                <h3>Memory 7</h3>
+                <p>Text for memory 7.</p>
+                <button class="next">Next</button>
+            </div>
+        </div>
+        <button class="back">Back to Gifts</button>
+    </section>
+
+    <!-- Box 4: Surprise -->
+    <section id="surprise" class="page">
+        <h2>Surprise!</h2>
+        <div class="surprise-items">
+            <div class="item chocolate">🍫</div>
+            <div class="item flower">🌸</div>
+            <div class="item cake">🎂</div>
+            <div class="sparkle">✨</div>
+            <div class="sparkle">✨</div>
+        </div>
+        <button class="back">Back to Gifts</button>
+    </section>
+
+    <!-- Final Page -->
+    <section id="final" class="page">
+        <h2>Did you like it?</h2>
+        <div class="hearts">
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+            <div class="heart">❤️</div>
+        </div>
+        <button id="yesLike">Yes!</button>
+        <button id="noLike">No</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
